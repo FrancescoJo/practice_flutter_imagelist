@@ -1,11 +1,20 @@
+# Platform files
 .DS_Store
+desktop.ini
+
+# IDE/Editor files
 .atom/
-.dart_tool/
+*.iml
 .idea
 .vscode/
-.packages
-.pub/
+
+# Compilation results
 build/
 ios/.generated/
+
+# Flutter/Dart files
 packages
+.dart_tool/
+.packages
+.pub/
 .flutter-plugins
