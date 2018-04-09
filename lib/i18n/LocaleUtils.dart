@@ -1,3 +1,9 @@
+/*
+ * My first flutter project
+ *
+ * author: Francesco Jo(nimbusob@gmail.com)
+ * since: 9 - Apr - 2018
+ */
 import 'dart:io';
 import 'dart:ui';
 

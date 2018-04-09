@@ -1,3 +1,11 @@
+/*
+ * My first flutter project
+ *
+ * author: Francesco Jo(nimbusob@gmail.com)
+ * since: 9 - Apr - 2018
+ */
+
+/// This interface holds all i18n target texts used in whole programme.
 abstract class IMessageMap {
   Map<String, String> populate();
 

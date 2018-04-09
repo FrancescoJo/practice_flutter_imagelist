@@ -9,6 +9,7 @@ desktop.ini
 .vscode/
 
 # Compilation results
+.gradle
 build/
 ios/.generated/
 

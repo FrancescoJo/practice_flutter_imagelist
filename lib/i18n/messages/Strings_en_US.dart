@@ -1,3 +1,9 @@
+/*
+ * My first flutter project
+ *
+ * author: Francesco Jo(nimbusob@gmail.com)
+ * since: 9 - Apr - 2018
+ */
 import 'package:practice_flutter_imagelist/i18n/IMessageMap.dart';
 
 /// US English text implementation. Direct use of this class is
