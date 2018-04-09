@@ -5,18 +5,17 @@
  * since: 9 - Apr - 2018
  */
 import 'package:flutter/material.dart';
-import 'package:practice_flutter_imagelist/core/widget/AppStateAwareWidget.dart';
+import 'package:practice_flutter_imagelist/core/lifecycle/AppLifecycleAwareWidget.dart';
 import 'package:practice_flutter_imagelist/i18n/LocaleUtils.dart';
 import 'package:practice_flutter_imagelist/i18n/S.dart';
-import 'package:practice_flutter_imagelist/ui/main/MainUi.dart';
-import 'package:rxdart/rxdart.dart';
+import 'package:practice_flutter_imagelist/ui/main/MainUiImpl.dart';
 
 /// Main programme entry point.
 void main() => runApp(new Application());
 
 /// Wrapper class of this "Application"
 /// This widget is the root of your application.
-class Application extends AppStateAwareWidget {
+class Application extends AppLifecycleAwareWidget {
   static Locale currentLocale = LocaleUtils.getSystemLocale();
 
   Application() {
@@ -28,7 +27,7 @@ class Application extends AppStateAwareWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MainUi(),
+      home: new MainUiImpl(),
     );
   }
 }

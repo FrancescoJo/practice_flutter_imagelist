@@ -1,0 +1,4 @@
+enum AppLifecycle {
+  RESUMED,
+  PAUSED
+}
