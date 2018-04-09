@@ -9,6 +9,7 @@ import 'package:practice_flutter_imagelist/core/widget/AppStateAwareWidget.dart'
 import 'package:practice_flutter_imagelist/i18n/LocaleUtils.dart';
 import 'package:practice_flutter_imagelist/i18n/S.dart';
 import 'package:practice_flutter_imagelist/ui/main/MainUi.dart';
+import 'package:rxdart/rxdart.dart';
 
 /// Main programme entry point.
 void main() => runApp(new Application());

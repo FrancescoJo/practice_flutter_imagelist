@@ -17,6 +17,7 @@ dependencies:
 
   # 3rdparty libs
   sprintf: "^3.0.2"
+  rxdart: "^0.16.6"
 
 dev_dependencies:
   flutter_test:
