@@ -16,7 +16,7 @@ void main() => runApp(new Application());
 /// Wrapper class of this "Application"
 /// This widget is the root of your application.
 class Application extends AppLifecycleAwareWidget {
-  static Locale currentLocale = LocaleUtils.getSystemLocale();
+  static var currentLocale = LocaleUtils.getSystemLocale();
 
   Application() {
     S.initWith(Application.currentLocale);

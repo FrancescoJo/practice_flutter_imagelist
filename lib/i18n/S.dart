@@ -13,13 +13,13 @@ import 'package:practice_flutter_imagelist/i18n/messages/Strings_es_ES.dart';
 import 'package:practice_flutter_imagelist/core/util/Collections.dart';
 import 'package:sprintf/sprintf.dart';
 
-/// This class holds all strings required for current language; However this class runs under
-/// custom implementation therefore an initialisation process must be done before use. Invoke
-/// `init` method at the programme entry point to achieve this requisite.
+/// This class holds all strings required for current language; However this
+/// class runs under custom implementation therefore an initialisation process
+/// must be done before use. Invoke `init` method at the programme entry point
+/// to achieve this requisite.
 ///
-/// Why custom implementation rather than Flutter `Intl` package? Because it lacks functionality
-/// and too difficult to setup.
-// TODO: Hot reload support
+/// Why custom implementation rather than Flutter `Intl` package? Because it
+/// lacks functionality, too difficult to setup and buggy(in Feb. 2018).
 class S {
   // public
   static const _TextSpec msg_title_main_ui = const _TextSpec(IMessageMap.msg_title_main_ui);
