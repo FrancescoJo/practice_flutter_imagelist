@@ -11,6 +11,8 @@ import 'package:practice_flutter_imagelist/ui/main/MainUi.dart';
 import 'package:practice_flutter_imagelist/ui/main/MainUiViewModel.dart';
 
 class MainUiImpl extends AppLifecycleAwareWidget implements MainUi {
+  // This generates a warning. What I want to do is:
+  // final MainUiViewModel _viewModel = new MainUiViewModel(this);
   MainUiViewModel _viewModel;
 
   MainUiImpl() {

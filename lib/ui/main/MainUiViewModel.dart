@@ -12,11 +12,9 @@ import 'package:practice_flutter_imagelist/ui/main/MainUiModelImpl.dart';
 
 class MainUiViewModel extends ViewModelTemplate {
   final MainUiModelImpl _model = new MainUiModelImpl();
-  MainUi _view;
+  final MainUi _view;
 
-  MainUiViewModel(MainUi _view) : super(_view) {
-    this._view = _view;
-  }
+  MainUiViewModel(this._view) : super(_view);
 
   void loadImageList() {
     _model.invalidate(_view.getLoadingView());
@@ -24,6 +22,7 @@ class MainUiViewModel extends ViewModelTemplate {
                  // I'm a newbie to Dart - is there more concise syntax to achieve this?
                  (json) => ImageListDto.parseJson(json))
         .listen((imageList) {
+          // TODO: create list view via MainUi and present it
           print("List contains ${imageList.items.length} images");
           imageList.items.forEach((imageDto) {
             print("$imageDto");
