@@ -22,8 +22,12 @@ import 'package:sprintf/sprintf.dart';
 /// lacks functionality, too difficult to setup and buggy(in Feb. 2018).
 class S {
   // public
-  static const _TextSpec msg_title_main_ui = const _TextSpec(IMessageMap.msg_title_main_ui);
-  static const _TextSpec msg_hello_world   = const _TextSpec(IMessageMap.msg_hello_world);
+  static const _TextSpec label_title_error       = const _TextSpec(IMessageMap.label_title_error);
+  static const _TextSpec label_ok                = const _TextSpec(IMessageMap.label_ok);
+
+  static const _TextSpec msg_title_main_ui       = const _TextSpec(IMessageMap.msg_title_main_ui);
+  static const _TextSpec msg_please_wait_loading = const _TextSpec(IMessageMap.msg_please_wait_loading);
+  static const _TextSpec msg_error_while_loading = const _TextSpec(IMessageMap.msg_error_while_loading);
 
   // private
   static Locale _locale;

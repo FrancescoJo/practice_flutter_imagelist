@@ -13,8 +13,12 @@ class Strings_es_ES extends IMessageMap {
   @override
   Map<String, String> populate() {
     return {
+      IMessageMap.label_title_error: "Error",
+      IMessageMap.label_ok: "Ok",
+
       IMessageMap.msg_title_main_ui: "Mi primera app de Flutter",
-      IMessageMap.msg_hello_world: "Hola, mundo"
+      IMessageMap.msg_please_wait_loading: "Cargando… Espere por favor",
+      IMessageMap.msg_error_while_loading: "Hay un error. La razón: %s"
     };
   }
 }

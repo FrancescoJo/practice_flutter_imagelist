@@ -17,8 +17,8 @@ class ImageListDto {
     }
 
     // ignore: strong_mode_uses_dynamic_as_bottom
-    final itemList = (jsonObject as List).map<ImageDto>((Map<String, dynamic> entry) {
-      return new ImageDto(entry);
+    final itemList = (jsonObject as List).map<ImageDto>((Object jsonEntry) {
+      return new ImageDto(jsonEntry);
     }).toList();
 
     return new ImageListDto(itemList);

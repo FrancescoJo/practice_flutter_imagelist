@@ -5,9 +5,11 @@
  * since: 9 - Apr - 2018
  */
 import 'package:flutter/widgets.dart';
-import 'package:practice_flutter_imagelist/core/lifecycle/AppLifecycle.dart';
-import 'package:practice_flutter_imagelist/core/lifecycle/AppLifecycleOwner.dart';
+import 'package:flutter/foundation.dart';
 import 'package:rxdart/rxdart.dart';
+
+import 'AppLifecycle.dart';
+import 'AppLifecycleOwner.dart';
 
 /// Application state-aware `Widget` class. Inheriting this class causes your
 /// widget respond to any state(app lifecycle, locale, memory, etc) changes and
@@ -17,6 +19,8 @@ abstract class AppLifecycleAwareWidget extends StatefulWidget
   final _onResumeSubject = new PublishSubject<AppLifecycleState>();
   final _onPauseSubject  = new PublishSubject<AppLifecycleState>();
 
+  /// Be careful: The global state callback 'onResumed' and 'onPaused' will
+  /// not be invoked if you override this method.
   @override State createState() => new _LifecycleAwareState(this);
 
   Widget build(BuildContext context);
@@ -29,11 +33,13 @@ abstract class AppLifecycleAwareWidget extends StatefulWidget
   /// Called when this `Widget` is entered to `resumed` state.
   /// See https://docs.flutter.io/flutter/dart-ui/AppLifecycleState-class.html#resumed
   /// for the significance.
+  @mustCallSuper
   void onResumed() { /* Default implementation */ }
 
   /// Called when this `Widget` is entered to `paused` state.
   /// See https://docs.flutter.io/flutter/dart-ui/AppLifecycleState-class.html#paused
   /// for the significance.
+  @mustCallSuper
   void onPaused() { /* Default implementation */ }
 
   /// Called when Locale context of this `Widget` is changed.

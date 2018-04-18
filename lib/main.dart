@@ -5,17 +5,16 @@
  * since: 9 - Apr - 2018
  */
 import 'package:flutter/material.dart';
-import 'package:practice_flutter_imagelist/core/lifecycle/AppLifecycleAwareWidget.dart';
 import 'package:practice_flutter_imagelist/i18n/LocaleUtils.dart';
 import 'package:practice_flutter_imagelist/i18n/S.dart';
-import 'package:practice_flutter_imagelist/ui/main/MainUiImpl.dart';
+import 'package:practice_flutter_imagelist/ui/MainScreen.dart';
 
 /// Main programme entry point.
 void main() => runApp(new Application());
 
 /// Wrapper class of this "Application"
 /// This widget is the root of your application.
-class Application extends AppLifecycleAwareWidget {
+class Application extends StatelessWidget {
   static var currentLocale = LocaleUtils.getSystemLocale();
 
   Application() {
@@ -27,7 +26,7 @@ class Application extends AppLifecycleAwareWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MainUiImpl(),
+      home: new MainScreen()
     );
   }
 }

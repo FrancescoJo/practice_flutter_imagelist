@@ -1,5 +1,12 @@
-import 'package:practice_flutter_imagelist/core/lifecycle/AppLifecycle.dart';
+/*
+ * My first flutter project
+ *
+ * author: Francesco Jo(nimbusob@gmail.com)
+ * since: 9 - Apr - 2018
+ */
 import 'package:rxdart/rxdart.dart';
+
+import 'AppLifecycle.dart';
 
 abstract class AppLifecycleOwner {
   /// Returns an `Observable` which emits given `desiredLifecycle` when the
