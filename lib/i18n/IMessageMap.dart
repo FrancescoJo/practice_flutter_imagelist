@@ -15,4 +15,5 @@ abstract class IMessageMap {
   static const String msg_title_main_ui = "msg_title_main_ui";
   static const String msg_please_wait_loading = "msg_please_wait_loading";
   static const String msg_error_while_loading = "msg_error_while_loading";
+  static const String msg_empty_image_list = "msg_empty_image_list";
 }

@@ -18,7 +18,8 @@ class Strings_en_US extends IMessageMap {
 
       IMessageMap.msg_title_main_ui: "My first Flutter app",
       IMessageMap.msg_please_wait_loading: "Please wait while loading…",
-      IMessageMap.msg_error_while_loading: "Error occurred. Reason: %s"
+      IMessageMap.msg_error_while_loading: "Error occurred. Reason: %s",
+      IMessageMap.msg_empty_image_list: "No images."
     };
   }
 }

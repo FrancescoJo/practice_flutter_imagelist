@@ -21,7 +21,7 @@ abstract class StateTemplate<T extends StatefulWidget> extends State<T> {
   @override
   Widget build(BuildContext context) {
     if (!_isBuilt) {
-      _isBuilt = true;
+      this._isBuilt = true;
     }
 
     return createUi(context);

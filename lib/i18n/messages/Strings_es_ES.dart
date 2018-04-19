@@ -18,7 +18,8 @@ class Strings_es_ES extends IMessageMap {
 
       IMessageMap.msg_title_main_ui: "Mi primera app de Flutter",
       IMessageMap.msg_please_wait_loading: "Cargando… Espere por favor",
-      IMessageMap.msg_error_while_loading: "Hay un error. La razón: %s"
+      IMessageMap.msg_error_while_loading: "Hay un error. La razón: %s",
+      IMessageMap.msg_empty_image_list: "No hay ninguna imagenes."
     };
   }
 }

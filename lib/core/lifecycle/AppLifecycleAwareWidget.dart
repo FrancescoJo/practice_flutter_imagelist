@@ -47,7 +47,7 @@ abstract class AppLifecycleAwareWidget extends StatefulWidget
   void onLocaleChanged(Locale locale) { /* Default implementation */ }
 
   @override Observable<AppLifecycle> lifecycleOf(AppLifecycle desiredLifecycle) {
-    // This looks quite stupid; study Dart Streams and
+    // XXX(fj): This looks quite stupid; study Dart Streams and
     // change logic to utilise just single state subject to achieve this.
     // https://www.dartlang.org/tutorials/language/streams
     if (desiredLifecycle == AppLifecycle.PAUSED) {
@@ -102,12 +102,5 @@ class _LifecycleAwareState extends State<AppLifecycleAwareWidget>
     });
   }
 
-  @override Widget build(BuildContext context) {
-    final view = _stateCallback.build(context);
-
-    // To ensure first 'onResumed' called after child's build is finished
-    _stateCallback._onResumeSubject.add(AppLifecycleState.resumed);
-    _stateCallback.onResumed();
-    return view;
-  }
+  @override Widget build(BuildContext context) => _stateCallback.build(context);
 }

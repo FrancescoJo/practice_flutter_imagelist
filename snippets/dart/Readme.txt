@@ -1,1 +1,0 @@
-Remnants of my first attempt to implement mvvm with flutter - IT DOES NOT WORKS!!

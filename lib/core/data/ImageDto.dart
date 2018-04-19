@@ -16,6 +16,7 @@ class ImageDto {
   String postUrl;
 
   ImageDto(Map<String, dynamic> jsonObject) {
+    // XXX(fj): Meh...
     this.id        = jsonObject["id"];
     this.format    = jsonObject["format"];
     this.width     = jsonObject["width"];

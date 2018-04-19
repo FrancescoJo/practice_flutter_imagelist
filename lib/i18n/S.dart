@@ -28,6 +28,7 @@ class S {
   static const _TextSpec msg_title_main_ui       = const _TextSpec(IMessageMap.msg_title_main_ui);
   static const _TextSpec msg_please_wait_loading = const _TextSpec(IMessageMap.msg_please_wait_loading);
   static const _TextSpec msg_error_while_loading = const _TextSpec(IMessageMap.msg_error_while_loading);
+  static const _TextSpec msg_empty_image_list    = const _TextSpec(IMessageMap.msg_empty_image_list);
 
   // private
   static Locale _locale;

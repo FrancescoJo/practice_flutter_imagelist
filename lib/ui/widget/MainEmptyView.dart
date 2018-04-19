@@ -13,8 +13,6 @@ class MainEmptyView extends StatelessWidget {
           child: new Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-            new CircularProgressIndicator(),
-            new Padding(padding: const EdgeInsets.all(8.0)),
-            new Text(S.msg_please_wait_loading.text())
+            new Text(S.msg_empty_image_list.text())
           ]));
 }
